@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Sandrão</title>
+</head>
+
+<body>
+    <div id="main">
+        <label for="numero">Número</label>
+        <input type="number" id="numero">
+        
+        <div class="select converter-de">
+            <label for="converter-de">Converter de: </label>
+            <select name="converter-de" id="converter-de">
+                <option value="Milimetro">Milímetro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centímetro</option>
+                <option value="Quilometro">Quilêmetro</option>
+            </select>
+        </div>
+        <div class="select converter-para">
+            <label for="converter-para">Converter para: </label>
+            <select name="converter-para" id="converter-para">
+                <option value="Milimetro">Milímetro</option>
+                <option value="Metro">Metro</option>
+                <option value="Centimetro">Centímetro</option>
+                <option value="Quilometro">Quilêmetro</option>
+            </select>
+        </div>
+
+        <div class="resultado">
+            <label for="">Resultado: </label>
+            <input type='text' id='resultado' />
+        </div>
+
+        <button class="btn-converter" onclick="converter()">
+            Converter
+        </button>
+    </div>
+
+    <script src="cordova.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
